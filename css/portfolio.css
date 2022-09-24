@@ -67,9 +67,7 @@ nav {
     padding: 0 3%;
     display: flex;
     align-items: center;
-    padding-top: 820px;
-    
-   
+    padding-top: 820px; 
 }
 .f {
     animation: fromRight 1.2s;
@@ -179,6 +177,9 @@ nav {
 }
 .sobre div i:nth-child(1) {
     color: rgb(11, 168, 11);
+}
+.portfolio {
+    padding-bottom: 60px;
 }
 .portfolio ul {
     display: flex;
