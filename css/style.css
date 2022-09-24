@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Saira+Extra+Condensed:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Saira Extra Condensed', sans-serif;
+    letter-spacing: 2px;
+}
+body {
+    height: 100%;
+    display: flex;
+}
+aside {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside ul li {
+    margin-bottom: 20px;
+}
+aside ul li:nth-child(1) {
+    animation: fromLeft 1.2s;
+}
+aside ul li:nth-child(2) {
+    animation: fromLeft 1.2s .2s backwards;
+}
+aside ul li:nth-child(3) {
+    animation: fromLeft 1.2s .4s backwards;
+}
+aside ul li:nth-child(4) {
+    animation: fromLeft 1.2s .6s backwards;
+}
+aside ul li:nth-child(5) {
+    animation: fromLeft 1.2s .8s backwards;
+}
+aside ul a {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+aside ul a:hover {
+    color: rgb(182, 123, 238);
+}
+nav {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.div-img {
+    margin-bottom: 20px;
+}
+.div-img img {
+    width: 55%;
+    border-radius: 50%;
+    border: 8px solid rgb(184, 124, 240);
+}
+.sobre {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 20%;
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+}
+.f {
+    animation: fromRight 1.2s;
+}
+.i-1 {
+    animation: fromRight 1.2s .1s backwards;
+}
+.l {
+    animation: fromRight 1.2s .2s backwards;
+}
+.i-2 {
+    animation: fromRight 1.2s .3s backwards;
+}
+.p {
+    animation: fromRight 1.2s .4s backwards;
+}
+.e {
+    animation: fromRight 1.2s .5s backwards; 
+}
+.s-1 {
+    animation: fromRight 1.2s .6s backwards;
+}
+.a {
+    animation: fromRight 1.2s .7s backwards;
+}
+.n {
+    animation: fromRight 1.2s .8s backwards;
+}
+.t {
+    animation: fromRight 1.2s .9s backwards;
+}
+.o {
+    animation: fromRight 1.2s .9.9s backwards;
+}
+.s-2 {
+    animation: fromRight 1.2s .9.9s backwards;
+}
+.sobre ul {
+    display: flex;
+    gap: 20px;
+}
+.sobre ul i {
+    font-size: 2.7rem;
+    color: blueviolet;
+}
+.sobre h2 {
+    color: #343a40;
+    font-size: 2.8rem;
+}
+.sobre p {
+    margin: 30px 0 40px 0;
+    font-size: 1.3rem;
+    color: #414549;
+    font-weight: 500;
+}
+.sobre .span-blueviolet, h3 span {
+    color: blueviolet;
+}
+.ul-line {
+    display: flex;
+    justify-content: space-between;
+}
+.ul-line li {
+    transition: all .3s;
+}
+.ul-line li:hover {
+    transform: scale(1.12);
+}
+.ul-line ul li:nth-child(1) {
+    animation: fromBottom 1.2s;
+}
+.ul-line ul li:nth-child(2) {
+    animation: fromBottom 1.2s .2s backwards;
+}
+.ul-line ul li:nth-child(3) {
+    animation: fromBottom 1.2s .4s backwards;
+}
+.ul-line button {
+    animation: fromBottom 1.2s .6s backwards;
+}
+.ul-line button {
+    margin-right: 200px;
+    color: white;
+    background: blueviolet;
+    padding: 0 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+.ul-line button:hover {
+    transform: scale(1.1);
+} 
+.tecnologias {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 20%;
+    padding: 0 3%;
+    display: flex;
+    align-items: center;
+}
+@keyframes fromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fromRight{
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
