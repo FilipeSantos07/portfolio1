@@ -9,9 +9,6 @@
     font-family: 'Saira Extra Condensed', sans-serif;
     letter-spacing: 2px;
 }
-body {
-    height: 200vh;
-}
 aside {
     width: 20%;
     height: 100%;
@@ -54,6 +51,7 @@ aside ul a:hover {
 }
 nav {
     text-align: center;
+   
 }
 .div-img {
     margin-bottom: 20px;
@@ -74,8 +72,7 @@ nav {
     left: 20%;
     padding: 0 3%;
     display: flex;
-    align-items: center;
-    padding-top: 820px; 
+    align-items: center; 
 }
 .f {
     animation: fromRight 1.2s;
@@ -208,6 +205,33 @@ nav {
     object-fit: cover;
     border-radius: 10px;
     border: 1px solid rgb(172, 167, 167);
+}
+.box1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 50px 0;
+}
+.contato {
+    margin-top: 20px;
+}
+.contato div:nth-child(1) {
+    animation: fromRight 1.2s;
+}
+.contato div:nth-child(2) {
+    animation: fromRight 1.2s .3s backwards;
+}
+.contato p {
+  margin: 0;
+}
+.contato i {
+    font-size: 1.5rem;
+}
+.contato h3 {
+    font-size: 1.6rem;
+}
+.contato i.fa-whatsapp {
+    font-size: 1.7rem;
 }
 @keyframes fromLeft {
     from {

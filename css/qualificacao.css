@@ -21,9 +21,14 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: samePlace 1.2s .1s backwards;
 }
 aside ul li {
     margin-bottom: 20px;
+    transition: all .3s;
+}
+aside ul li:hover {
+    transform: scale(1.1);
 }
 aside ul li:nth-child(1) {
     animation: fromLeft 1.2s;
@@ -50,7 +55,6 @@ aside ul a:hover {
 }
 nav {
     text-align: center;
-    margin-bottom: 100px;
 }
 .div-img {
     margin-bottom: 20px;
@@ -59,6 +63,10 @@ nav {
     width: 55%;
     border-radius: 50%;
     border: 8px solid rgb(184, 124, 240);
+    transition: all .3s;
+}
+.div-img img:hover {
+    transform: scale(1.1);
 }
 .sobre {
     width: 80%;
@@ -123,8 +131,23 @@ nav {
     color: #414549;
     font-weight: 500;
 }
+.sobre div p:nth-child(2) {
+    animation: fromRight 1.2s;
+}
+.sobre div p:nth-child(3) {
+    animation: fromRight 1.2s .2s backwards;
+}
+.sobre div p:nth-child(4) {
+    animation: fromRight 1.2s .3s backwards;
+}
+.sobre div p:nth-child(5) {
+    animation: fromRight 1.2s .4s backwards;
+}
 .sobre .span-blueviolet, h3 span {
     color: blueviolet;
+}
+.empresas {
+    font-weight: 700;
 }
 .ul-line {
     display: flex;
@@ -175,7 +198,7 @@ nav {
 .verde {
     color: rgb(11, 168, 11);
 }
-.sobre div i:nth-child(1) {
+.sobre div i {
     color: rgb(11, 168, 11);
 }
 
@@ -207,5 +230,15 @@ nav {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+@keyframes samePlace {
+    from {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
