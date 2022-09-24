@@ -162,6 +162,9 @@ nav {
 }
 .ul-line button {
     animation: fromBottom 1.2s .6s backwards;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .ul-line button {
     margin-right: 200px;
@@ -174,6 +177,9 @@ nav {
     font-size: 1.2rem;
     cursor: pointer;
     transition: all .3s;
+}
+.ul-line button i {
+    font-size: 1.02rem;
 }
 .ul-line button:hover {
     transform: scale(1.1);
