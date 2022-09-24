@@ -249,3 +249,15 @@ nav {
         transform: translateX(0);
     }
 }
+
+@media only screen and (max-width:1150px) {
+    .sobre {
+        padding: 1300px 0 0 14%;   
+    }
+    .portfolio ul {
+        gap: 3;
+    }
+   .portfolio img {
+    width: 220px;
+   }
+}

@@ -235,3 +235,11 @@ nav {
         transform: translateX(0);
     }
 }
+@media only screen and (max-width:800px) {
+    .ul-line button {
+        margin-right: 0;
+    }
+    .div-img img {
+        width: 80%;
+    }
+}   
