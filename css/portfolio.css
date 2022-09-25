@@ -250,14 +250,57 @@ nav {
     }
 }
 
-@media only screen and (max-width:1150px) {
+@media only screen and (max-width:800px) {
+    body {
+        width: 100%;
+        flex-direction: column;         
+    }
+    .container1 {
+        max-width: 800px;
+        margin: auto ;
+        width: 90%;
+        margin-top: 30px;
+    }
+    .ul-line button {
+        margin-right: 0;
+    }
+    .div-img {
+        display: none;
+    }
+    aside {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        position: relative;
+        padding: 50px 30px;
+    }
+    aside ul {
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    aside ul li {
+        margin-bottom: 0;
+    }
     .sobre {
-        padding: 1300px 0 0 14%;   
+        margin: auto;
+        height: auto; 
+        padding-top: 0;
     }
-    .portfolio ul {
-        gap: 3;
+    .sobre h2 {
+        font-size: 2.6rem;
+        margin-bottom: 30px;
     }
-   .portfolio img {
-    width: 220px;
-   }
+    .sobre p {
+        margin: 0;
+    }
+    .sobre hr {
+        margin: 20px 0;
+    }
 }
+@media only screen and (min-width: 801px) and (max-width:1150px) {
+    .sobre {
+        padding-top: 1304px;
+    }
+}   

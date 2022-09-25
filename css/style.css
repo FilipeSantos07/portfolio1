@@ -269,7 +269,7 @@ nav {
         position: static;
         width: 90%;
         margin: auto;
-        height: 100vh;
+        margin-top: 20px;
     }
     .sobre h2 {
         font-size: 2.6rem;
