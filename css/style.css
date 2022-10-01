@@ -145,6 +145,10 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+hr {
+    max-width: 932px;
+    margin-bottom: 50px;
+}
 .ul-line li {
     transition: all .3s;
 }
